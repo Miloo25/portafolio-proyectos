@@ -1,19 +1,19 @@
-// 1. Importamos la librería Express que descargamos antes
 const express = require('express');
+require('dotenv').config();
+const proyectosRoutes = require('./routes/proyectos'); // Importamos las rutas ordenadas
 
-// 2. Inicializamos la aplicación de Express
 const app = express();
+const PORT = process.env.PORT || 3000;
 
-// 3. Definimos el puerto donde escuchará nuestro servidor
-const PORT = 3000;
+app.use(express.json());
 
-// 4. Creamos nuestra primera "Ruta" (Endpoint). 
-// Cuando entremos a http://localhost:3000/ nos responderá este mensaje.
+// Le decimos al servidor que use las rutas de proyectos cuando alguien entre a /api/proyectos
+app.use('/api/proyectos', proyectosRoutes);
+
 app.get('/', (req, res) => {
-  res.send('¡Servidor funcionando correctamente!');
+  res.send('¡Servidor ordenado y funcionando!');
 });
 
-// 5. Le decimos al servidor que empiece a escuchar las peticiones
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo con éxito en http://localhost:${PORT}`);
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
