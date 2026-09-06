@@ -1,0 +1,138 @@
+.clima-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.clima-card {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(28, 182, 152, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(28, 182, 152, 0.1);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.clima-card h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.clima-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.clima-form input {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.clima-form input:focus {
+  border-color: #1CB698;
+}
+
+.clima-form button {
+  padding: 12px 20px;
+  background: #1CB698;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.clima-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px #1CB698;
+}
+
+.clima-error {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  font-size: 0.9rem;
+}
+
+.clima-info {
+  margin-top: 20px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.clima-info h3 {
+  color: #e2e8f0;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.temperatura-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.temperatura-box img {
+  width: 70px;
+  height: 70px;
+}
+
+.temperatura {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1CB698;
+  text-shadow: 0 0 10px rgba(28, 182, 152, 0.4);
+}
+
+.descripcion {
+  color: #94a3b8;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.detalles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.detalles-grid span {
+  display: block;
+  font-size: 0.75rem;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.detalles-grid strong {
+  display: block;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

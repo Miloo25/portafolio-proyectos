@@ -1,0 +1,39 @@
+.clima-page-container {
+  min-height: 100vh;
+  background-color: #0b0f17;
+  color: #ffffff;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clima-page-header {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.btn-volver {
+  display: inline-block;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(28, 182, 152, 0.4);
+  color: #1CB698;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+  background: #1CB698;
+  color: #000000;
+  box-shadow: 0 0 15px rgba(28, 182, 152, 0.4);
+}
+
+.clima-page-content {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 40px;
+}
