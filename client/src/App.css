@@ -1341,6 +1341,62 @@ body::-webkit-scrollbar-thumb:hover {
   to { transform: rotate(360deg); }
 }
 
+/* --- Redes Sociales --- */
+.socials-wrapper {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(5, 10, 29, 0.8);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #10B981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-btn:hover {
+  background: #10B981;
+  color: #050a1d;
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+}
+
+.social-btn.whatsapp-btn:hover {
+  background: #25D366;
+  border-color: #25D366;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
+}
+
+/* --- Mapa Interactivo --- */
+.map-container {
+  margin-top: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  filter: grayscale(80%) invert(90%) hue-rotate(180deg) brightness(85%) contrast(90%);
+  transition: filter 0.3s ease;
+}
+
+.map-container:hover {
+  filter: grayscale(0%) invert(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
 /* ==========================================================================
    FOOTER PREMIUM DARK NEÓN (CAMILO.DEV)
    ========================================================================== */

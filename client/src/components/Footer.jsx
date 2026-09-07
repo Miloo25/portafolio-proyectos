@@ -1,4 +1,16 @@
 import React from 'react';
+import { 
+  FaHome, 
+  FaUser, 
+  FaCode, 
+  FaBriefcase, 
+  FaFolderOpen, 
+  FaEnvelope, 
+  FaGithub, 
+  FaLinkedin, 
+  FaReact, 
+  FaChevronUp 
+} from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -6,36 +18,36 @@ function Footer() {
       {/* Botón flotante neón para regresar al inicio */}
       <a href="#inicio" className="arriba" aria-label="Volver arriba" title="Volver al inicio">
         <span className="letra-c">C</span>
-        <i className="fa-solid fa-chevron-up flecha-arriba"></i>
+        <FaChevronUp className="flecha-arriba" />
       </a>
 
       <div className="contenido-footer">
         {/* Marca personal / Logotipo */}
         <div className="brand-footer">
           <h3>Camilo<span>.dev</span></h3>
-          <p>Desarrollador Web Junior | Creando experiencias digitales con pasión</p>
+          <p>Desarrollador Web | Creando experiencias digitales con pasión</p>
         </div>
 
-        {/* Enlaces de navegación fluidos */}
+        {/* Enlaces de navegación con iconos */}
         <nav className="footer-nav">
-          <a href="#inicio">Inicio</a>
-          <a href="#sobremi">Sobre Mí</a>
-          <a href="#skills">Habilidades</a>
-          <a href="#curriculum">Experiencia</a>
-          <a href="#portfolio">Proyectos</a>
-          <a href="#contacto">Contacto</a>
+          <a href="#inicio"><FaHome /> <span>Inicio</span></a>
+          <a href="#sobremi"><FaUser /> <span>Sobre Mí</span></a>
+          <a href="#skills"><FaCode /> <span>Habilidades</span></a>
+          <a href="#curriculum"><FaBriefcase /> <span>Experiencia</span></a>
+          <a href="#portfolio"><FaFolderOpen /> <span>Proyectos</span></a>
+          <a href="#contacto"><FaEnvelope /> <span>Contacto</span></a>
         </nav>
 
-        {/* Redes Sociales con enfoque profesional */}
+        {/* Redes Sociales Profesionales */}
         <div className="redes-footer">
           <a 
-            href="https://github.com" 
+            href="https://github.com/Miloo25" 
             target="_blank" 
             rel="noreferrer" 
             className="icono-github" 
             title="GitHub"
           >
-            <i className="fa-brands fa-github"></i> <span>GitHub</span>
+            <FaGithub /> <span>GitHub</span>
           </a>
           <a 
             href="https://linkedin.com" 
@@ -44,20 +56,20 @@ function Footer() {
             className="icono-linkedin" 
             title="LinkedIn"
           >
-            <i className="fa-brands fa-linkedin-in"></i> <span>LinkedIn</span>
+            <FaLinkedin /> <span>LinkedIn</span>
           </a>
           <a 
             href="mailto:sasory224@gmail.com" 
             className="icono-correo" 
             title="Correo"
           >
-            <i className="fa-solid fa-envelope"></i> <span>Correo</span>
+            <FaEnvelope /> <span>Correo</span>
           </a>
         </div>
 
-        {/* Muestra de stack moderno */}
+        {/* Badge de stack moderno */}
         <div className="badge-tech-footer">
-          <i className="fa-brands fa-react react-spin"></i>
+          <FaReact className="react-spin" />
           <span>Desarrollado con React & CSS3</span>
         </div>
 
